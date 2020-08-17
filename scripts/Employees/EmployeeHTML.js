@@ -1,8 +1,9 @@
 export const EmployeeAsHtml = (emp) => {
   return `
-  <div class="employeeRender">
-    <h1  class="employeeName">${emp.firstName} ${emp.lastName}</h1>
-    <p class="employeeAge">${emp.age}</p>
+  <div class="indEmpRender">
+    <div class="employeeName">${emp.firstName} ${emp.lastName}</div>
+    <div class="employeeAge">Age: ${emp.age}</div>
+    <div class="employeeComputer">${emp.computer.year} ${emp.computer.model}</div>
   </div>
   `
 }
