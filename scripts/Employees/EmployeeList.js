@@ -6,11 +6,10 @@ const contentTarget = document.querySelector(".employeeTarget")
 
 export const renderEmployees = () => {
   getEmployees()
-  .then(getComputers())
+  .then(getComputers)
   .then(() => {
     const empArray = useEmployees()
     const compArray = useComputers()
-    // let employeeString = ""
 
     contentTarget.innerHTML = empArray.map(
       (empObj) => {
@@ -19,15 +18,10 @@ export const renderEmployees = () => {
             return compObj.id === empObj.computerId
           }
         )
+        console.table(empObj)
         return EmployeeAsHtml(empObj)
       }
     ).join("")
 
-    // for (const employee of empArray) {
-
-    //   employeeString +=  EmployeeAsHtml(employee)
-    // }
-
-    // contentTarget.innerHTML = employeeString
   })
 }

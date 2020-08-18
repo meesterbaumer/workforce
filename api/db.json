@@ -45,5 +45,19 @@
       "age": 72,
       "computerId": 1
     }
+  ],
+  "departments": [
+    {
+      "id": 1,
+      "name": "IT"
+    },
+    {
+      "id": 2,
+      "name": "Finanace"
+    },
+    {
+      "id": 3,
+      "name": "HR"
+    }
   ]
 }
