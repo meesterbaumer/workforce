@@ -1,1 +1,3 @@
-console.log("hello")
+import { renderEmployees } from "./Employees/EmployeeList.js";
+
+renderEmployees()
