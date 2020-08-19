@@ -1,3 +1,3 @@
-import { renderEmployees } from "./Employees/EmployeeList.js";
+import { accessEmployees } from "./Employees/EmployeeList.js";
 
-renderEmployees()
+accessEmployees()
