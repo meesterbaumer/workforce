@@ -41,6 +41,66 @@
       "departmentId": 3
     }
   ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Orlando"
+    },
+    {
+      "id": 2,
+      "name": "Anderson"
+    },
+    {
+      "id": 3,
+      "name": "Bianca"
+    },
+    {
+      "id": 4,
+      "name": "Dave"
+    }
+  ],
+  "employeeCustomers": [
+    {
+      "id": 1,
+      "employeeId": 1,
+      "customerId": 3
+    },
+    {
+      "id": 2,
+      "employeeId": 1,
+      "customerId": 1
+    },
+    {
+      "id": 3,
+      "employeeId": 2,
+      "customerId": 2
+    },
+    {
+      "id": 4,
+      "employeeId": 2,
+      "customerId": 4
+    },
+    {
+      "id": 5,
+      "employeeId": 3,
+      "customerId": 3
+    },
+    {
+      "id": 6,
+      "employeeId": 3,
+      "customerId": 2
+    },
+    {
+      "id": 7,
+      "employeeId": 4,
+      "customerId": 1
+    },
+    {
+      "id": 8,
+      "employeeId": 4,
+      "customerId": 4
+    }
+  ],
   "locations": [
     {
       "id": 1,

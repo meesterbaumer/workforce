@@ -1,3 +1,3 @@
-import { accessEmployees } from "./Employees/EmployeeList.js";
+import { accessData } from "./Employees/EmployeeList.js";
 
-accessEmployees()
+accessData()
