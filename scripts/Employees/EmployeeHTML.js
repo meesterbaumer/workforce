@@ -6,6 +6,12 @@ export const EmployeeAsHtml = (emp) => {
     <div class="employeeComputer">${emp.sex}'s currently using a ${emp.computer.year} ${emp.computer.model}</div>
     <div class="employeeDepartment"> & works in the ${emp.department.name} department</div>
     <div class="employeeLocation"> at the ${emp.location.name} Branch.</div>
+    <hr>
+    <div class="employeeCustomers">${emp.sex} has worked with the following customers:
+    <ul class="customerList">
+        ${emp.customers.map(cust => `<li>${cust.name}</li>`).join("")}
+      </ul>
+    </div>
   </div>
   `
 }
