@@ -4,32 +4,41 @@ import { getComputers, useComputers } from "../Computers/ComputerData.js";
 import { getDepartments, useDepartments } from "../Departments/DepartmentData.js";
 
 const contentTarget = document.querySelector(".employeeTarget")
+let employees = []
+let computers = []
+let departments = []
 
-export const renderEmployees = () => {
+
+export const accessEmployees = () => {
   getEmployees()
   .then(getComputers)
   .then(getDepartments)
   .then(() => {
-    const empArray = useEmployees()
-    const compArray = useComputers()
-    const deptArray = useDepartments()
+    employees = useEmployees()
+    computers = useComputers()
+    departments = useDepartments()
 
-    contentTarget.innerHTML = empArray.map(
+    renderEmployees()
+  })
+}
+
+
+const renderEmployees = () => {
+  
+    contentTarget.innerHTML = employees.map(
       (empObj) => {
-        empObj.computer = compArray.find(
+        empObj.computer = computers.find(
           (compObj) => {
             return compObj.id === empObj.computerId
           }
         )
-        empObj.department = deptArray.find(
+        empObj.department = departments.find(
           (deptObj) => {
             return deptObj.id === empObj.departmentId
           }
         )
-        console.table(empObj)
         return EmployeeAsHtml(empObj)
       }
     ).join("")
 
-  })
-}
+  }
