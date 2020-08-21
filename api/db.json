@@ -1,4 +1,69 @@
 {
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Bob",
+      "lastName": "Westinghouse",
+      "sex": "He",
+      "age": 43,
+      "locationId": 2,
+      "computerId": 3,
+      "departmentId": 1
+    },
+    {
+      "id": 2,
+      "firstName": "Lanie",
+      "lastName": "Randolph",
+      "sex": "She",
+      "age": 34,
+      "locationId": 1,
+      "computerId": 2,
+      "departmentId": 3
+    },
+    {
+      "id": 3,
+      "firstName": "Jonathan",
+      "lastName": "Blankenship",
+      "sex": "He",
+      "age": 23,
+      "locationId": 3,
+      "computerId": 3,
+      "departmentId": 2
+    },
+    {
+      "id": 4,
+      "firstName": "Hilda",
+      "sex": "She",
+      "lastName": "Ross",
+      "age": 72,
+      "locationId": 1,
+      "computerId": 1,
+      "departmentId": 3
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville",
+      "city": "Franklin",
+      "state": "TN",
+      "zip": 37064
+    },
+    {
+      "id": 2,
+      "name": "Atlanta",
+      "city": "Stone Mountain",
+      "state": "GA",
+      "zip": 30086
+    },
+    {
+      "id": 3,
+      "name": "Memphis",
+      "city": "Cordova",
+      "state": "TN",
+      "zip": 38018
+    }
+  ],
   "computers": [
     {
       "id": 1,
@@ -14,44 +79,6 @@
       "id": 3,
       "model": "Macbook",
       "year": 2018
-    }
-  ],
-  "employees": [
-    {
-      "id": 1,
-      "firstName": "Bob",
-      "lastName": "Westinghouse",
-      "sex": "He",
-      "age": 43,
-      "computerId": 3,
-      "departmentId": 1
-    },
-    {
-      "id": 2,
-      "firstName": "Lanie",
-      "lastName": "Randolph",
-      "sex": "She",
-      "age": 34,
-      "computerId": 2,
-      "departmentId": 3
-    },
-    {
-      "id": 3,
-      "firstName": "Jonathan",
-      "lastName": "Blankenship",
-      "sex": "He",
-      "age": 23,
-      "computerId": 3,
-      "departmentId": 2
-    },
-    {
-      "id": 4,
-      "firstName": "Hilda",
-      "sex": "She",
-      "lastName": "Ross",
-      "age": 72,
-      "computerId": 1,
-      "departmentId": 3
     }
   ],
   "departments": [
